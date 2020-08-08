@@ -216,3 +216,30 @@ footer .fab .fa-facebook-f {
 footer .fab .fa-whatsapp {
   font-size: 2.5em;
 }
+
+#phone-alert {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  header,
+  footer,
+  #page-title-div,
+  .stuff {
+    display: none;
+  }
+  #phone-alert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 5%;
+  }
+  #phone-alert p {
+    font-size: 2em;
+  }
+}
