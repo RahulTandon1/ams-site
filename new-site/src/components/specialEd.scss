@@ -1,0 +1,87 @@
+@import "../styles/config";
+
+#page-title-div {
+  // horinzontally center
+  margin-top: 4.5%;
+  margin-left: auto;
+  margin-right: auto;
+
+  // centering text for safety
+  text-align: center;
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  #title-underline {
+    color: #ff6961;
+    border-style: solid;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-width: 1.5px;
+    border-radius: 5px;
+  }
+}
+
+.stuff {
+  // space out from previous "stuff"
+  margin-top: 2%;
+  padding-bottom: 60px;
+  .stuff-heading {
+    font-size: 1.75em;
+    color: #000000;
+    // indenting heading e.g. "Objectives"
+    margin-left: 5%;
+  }
+  .stuff-content {
+    // space out from heading if any
+    margin-top: 0.75%;
+    display: flex;
+    justify-content: space-around;
+    p {
+      line-height: 1.5em;
+      width: 45%;
+      font-size: 1.2em;
+    }
+    img {
+      width: 30%;
+      height: auto;
+      align-self: center;
+      border-radius: 5px;
+      border-width: 3px;
+      border-color: $primary-grey;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    ol,
+    ul {
+      li {
+        font-size: 1.2em;
+        padding-left: 1rem;
+      }
+      align-content: center;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .bordered {
+      border-style: solid;
+      border-color: $primary-grey;
+      border-radius: 15px;
+      padding: 1% 1% 1% 1%;
+    }
+  }
+
+  .stuff-divider {
+    border-radius: 10px;
+    border-width: 2px;
+    width: 50%;
+
+    // horizontal aligh
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 2.5%;
+  }
+}

@@ -1,0 +1,23 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+// variables
+$bg-color: #f4f9fc; //  - greyish
+// $bg-color: #fff; - white
+
+$primary-yellow: #fdfd96;
+$primary-grey: #504a4a;
+$primary-red: #ff6961;
+
+// css reset. Taken from Traversy media
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  // box sizing basically ensures that width of border etc. is taken into the width defined itself
+
+  // border-style: dotted;
+  // border-width: 1px;
+}

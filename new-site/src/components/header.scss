@@ -1,0 +1,97 @@
+@import "../styles/config";
+
+body {
+  background-color: $bg-color;
+  font-family: "Montserrat", sans-serif;
+  color: $primary-grey;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+header {
+  // background-color: rgba(248, 248, 248, 0.99);
+  background-color: $primary-yellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // padding all header content on top and bottom
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+
+  img {
+    display: inline-block;
+    width: 7%;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    z-index: 0;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  // styles for only the heading text
+  h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    // color: #ffa800;
+    a,
+    a:visited {
+      color: $primary-red;
+    }
+
+    font-size: 2.2em;
+  }
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  a,
+  a:visited {
+    // for the main headings
+    font-size: 1.2em;
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .dropdown {
+    .dropdown-content {
+      min-width: 7%;
+      border-style: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      display: none;
+      background-color: #fff;
+      color: darken($color: $primary-grey, $amount: 70%);
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      a {
+        padding-left: 5px;
+        padding-right: 7px;
+        margin-right: 0;
+        display: block;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+    &:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: $bg-color;
+    }
+  }
+  //
+}
