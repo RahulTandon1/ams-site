@@ -1,8 +1,14 @@
 @import "../styles/config";
 
-footer {
+.rahul {
+  line-height: 3em;
+  background-color: darken($footer-bg, 5%);
+  color: white;
+  text-align: center;
+}
+.footer-main-container {
   line-height: 2em;
-  background-color: #2c75c5;
+  background-color: $footer-bg;
   color: white;
   display: flex;
   flex-flow: row;

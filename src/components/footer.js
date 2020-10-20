@@ -3,6 +3,7 @@ import './footer.scss'
 
 const Footer = () => {
     return(<footer>
+    <div className="footer-main-container">
         <div className="info-column">
           <h2>Contact Us</h2>
           amritmasonicschool [at] gmail [dot] com <br />
@@ -33,6 +34,11 @@ const Footer = () => {
             allowfullscreen
           >
           </iframe>
+        </div>
+        
+    </div>
+    <div className="rahul">
+          Created with love by Rahul
         </div>
       </footer>)
 }
