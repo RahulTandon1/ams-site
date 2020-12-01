@@ -20,14 +20,12 @@ const MainPageContent = () => {
         </h2>
       </section>
       <section id="mission">
-        <h2>Our Mission</h2>
+        <h2>Our Mission & Work</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          sollicitudin risus et condimentum tristique. Maecenas consectetur est
-          sapien, et blandit ex lacinia sit amet. Mauris vel semper eros, id
-          aliquet urna. Cras eget sem id felis rutrum euismod. Fusce eget urna et
-          nibh vestibulum tincidunt. Vestibulum pretium finibus hendrerit.
-          Phasellus ut malesuada lacus.
+        We work with the differently-abled students with a motto: “Every Child Can Learn.”
+        A set up for 62 students, we provide various rehabilitation services to the students and coalesce with local government hospitals to
+        provide the required medical interventions. We also promote inclusion among mainstream
+        schools by conducting training sessions for their teachers and in-house remedial sessions.
         </p>
         <button id="contribute">Contribute</button>
       </section>

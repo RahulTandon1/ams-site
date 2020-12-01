@@ -28,6 +28,7 @@
 }
 
 #mission {
+  line-height: 2rem;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -49,6 +50,7 @@
 
   #contribute {
     background-color: $primary-yellow;
+    // border-color: $primary-grey;
     border: none;
     color: #000;
     text-align: center;
@@ -56,14 +58,16 @@
     padding: 1% 2%;
     text-decoration: none;
     border-radius: 30px;
-    box-shadow: 0px 3px 5px grey;
+    // box-shadow: 0px 0px 5px grey;
     margin-top: 30px;
     margin-bottom: 10px;
 
     &:hover {
       background-color: darken($primary-yellow, 5%);
       border-radius: 35px;
-      box-shadow: 0px 5px 4px grey;
+      // box-shadow: 0px 5px 4px grey;
+      // box-shadow: 0px 3px 5px grey;
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
     }
   }
 }
