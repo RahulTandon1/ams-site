@@ -5,44 +5,57 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+Amrit Masonic School's Website
 </h1>
+<center> A modified readme version of the original Gatsby readme </center>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This project was kickstarted with the Gatsby hello-world boilerplate. Using some hacky SCSS.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## 🚀 Running Locally
 
-## 🚀 Quick start
+0. **Pre requiste tools/tech**
 
-1.  **Create a Gatsby site.**
+   - Install Node.js from https://nodejs.org/en/
+   - Install Gatsby-CLI. [Official Docs](https://www.gatsbyjs.com/docs/tutorial/part-zero/)
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+1. **Clone the repo.**
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+   Use the Gatsby CLI to create a new site, specifying the hello-world starter.
 
-1.  **Start developing.**
+   ```shell
+   # clone this repo
+   git clone https://github.com/RahulTandon1/ams-site.git
 
-    Navigate into your new site’s directory and start it up.
+   cd ./ams-site
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+   gatsby develop
 
-1.  **Open the source code and start editing!**
+   ```
 
-    Your site is now running at `http://localhost:8000`!
+   You'll the site running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+1. **Start developing.**
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+   Navigate into your new site’s directory and start it up.
+
+   ```shell
+   cd my-hello-world-starter/
+   gatsby develop
+   ```
+
+1. **Open the source code and start editing!**
+
+   Your site is now running at `http://localhost:8000`!
+
+   _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+
+   Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
+
+> Please note I have note I not updated this for any custom files used in this project. What follow below are the ones in the Gastby hello-world starter.
 
     .
     ├── node_modules
@@ -82,18 +95,16 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## 🎓 Learning React or Gatsby
+
+If you've never React or Gatsby but have some basic HTML, CSS, JS experience most of the code in this repo will seem _sort of_ familiar but kinda of 'wrong.'
+
+- You'll need know **ES6 Syntax** to understand React. Youtube, Scrimba both have a plenty of tutorials. I watched a tutorial on [scrimba.com](https://scrimba.com) and [Mosh Hamdeani's video on ES6](https://www.youtube.com/watch?v=NCwa_xi0Uuc&ab_channel=ProgrammingwithMosh).
+- Next you can quickly dive into React. You'll need to know basics of state, prop, lifting state etc. I watched [Mosh's video](https://www.youtube.com/watch?v=Ke90Tje7VS0&ab_channel=ProgrammingwithMosh) and did the [official getting started tutorial](https://reactjs.org/docs/getting-started.html) for revision.
+- Now you're reading for Gatsby! I learnt most of what I know from [Andrew Mead's Great Gatsby Bootcamp](https://www.youtube.com/watch?v=8t0vNu2fCCM&ab_channel=AndrewMead) (Youtube video)
+
+I can't promise these'll work for you. I was able to gaine enough to build this website for AMS.
+
+If stuff doesn't make sense Google and official documentation are the saviours.
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->

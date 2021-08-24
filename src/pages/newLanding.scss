@@ -1,0 +1,218 @@
+@import "../styles/config";
+$menu-grey: #383535;
+$menu-blue: #1967d2;
+$menu-lightblue: rgba(25, 102, 210, 0.28);
+* {
+  // border: 1px solid;
+  box-sizing: border-box;
+}
+
+.header {
+  z-index: 0;
+  height: 76px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: $primary-yellow;
+  // vertical-align: middle;
+  .logo {
+    position: absolute;
+    height: 57px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu-button {
+    width: 82px;
+    height: 24px;
+    // height: 100%;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    .hamburger {
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      transform: translateY(-50%);
+    }
+    .menu-indicating-text {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 24px;
+      // display: in;
+      // max-width:
+    }
+  }
+  // .menu-stuff-container {
+  //   // height: 100%;
+  //   display: inline-block;
+  //   position: relative;
+  //   height: 100%;
+  //   padding-top: auto;
+  //   // vertical-align: middle;
+  // }
+  // .header-menu-indicating-text {
+  //   position: absolute;
+  //   top: 0;
+  //   line-height: 76px;
+  //   // font-size: 2rem;
+  //   // font-size: 1.5rem;
+  // }
+}
+.menu-container {
+  height: 100vh;
+  // width: 100vw;
+  width: 0vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  // visibility: hidden;
+  // overflow: hidden;
+  // transition: width 0.5s;
+}
+
+.fadeout {
+  // display: inline-block;
+  // width: calc(100vw - 340px);
+  overflow-x: hidden;
+  // width: 100vw;
+  width: 0vw;
+  height: 100vh;
+  position: fixed;
+  // left: calc(100vw - 340px);
+  background-color: rgba(56, 53, 53, 0.1);
+}
+
+.shadow-on {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+.shadow-off {
+  box-shadow: none;
+}
+.menu {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // width: 80vw;
+  width: 0vw;
+  height: 100vh;
+  // padding: 60px 0 0 0;
+  margin: 0 0 0 0;
+  z-index: 2;
+  display: block;
+  // vertical-align: middle;
+  // max-width: 335px;
+
+  transition: width 0.5s;
+  // credits to Google Classroom for this
+
+  padding-top: 30px;
+  background-color: #fffefe;
+
+  .yellow-highlight {
+    z-index: 3;
+    position: absolute;
+    background-color: $primary-yellow;
+    top: 0px;
+    width: 100%;
+    height: 22px;
+  }
+
+  .school-name-heading {
+    position: absolute;
+    text-overflow: h;
+    top: 6.7%;
+    display: block;
+    color: #000;
+    font-weight: bolder;
+    font-size: 1.15rem;
+    width: 100%;
+    text-align: center;
+  }
+  .divider {
+    color: #bdb9b9;
+    position: absolute;
+    width: 100%;
+    top: 12.3%;
+  }
+  .nav-items-container {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+  }
+  .heading {
+    display: block;
+    font-size: 1em;
+    max-width: 287px;
+    width: 287px;
+    max-height: 38px;
+    height: 38px;
+    // line-height: 38px;
+    // text-align: ;
+    // vertical-align: middle;
+    position: relative;
+
+    .dropdown-content {
+      margin-left: 22.1%;
+    }
+    .dropdown-content a {
+      // vertical-align: middle;
+      color: $menu-grey;
+      display: block;
+      height: 38px;
+      font-size: 1em;
+      line-height: 38px;
+      max-height: 38px;
+      width: 229px;
+      max-width: 229px;
+
+      &:visited {
+        color: $menu-grey;
+      }
+    }
+  }
+  .menu-icon-svg {
+    height: 36px;
+    width: 36px;
+    fill: $menu-grey;
+  }
+  .something {
+    position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 100%;
+    margin-left: 10px;
+    line-height: 36px;
+  }
+
+  .heading-text {
+    position: absolute;
+    height: 100%;
+    // vertical-align: text-bottom;
+    // margin-top: auto;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 2%;
+    line-height: 36px;
+  }
+}
