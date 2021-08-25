@@ -96,8 +96,8 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
 }
 
 .shadow-on {
-  box-shadow: 0 4px 4px 0 rgb(60, 64, 67, 0.3),
-    0 8px 12px 6px rgb(60, 64, 67, 0.15);
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3),
+    0 8px 12px 6px rgba(60, 64, 67, 0.15);
 }
 .shadow-off {
   box-shadow: none;
@@ -135,7 +135,9 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
 
   .school-name-heading {
     position: absolute;
-    text-overflow: h;
+    height: 5.3%;
+    text-overflow: hidden;
+    overflow-x: hidden;
     top: 6.7%;
     display: block;
     color: #000;
