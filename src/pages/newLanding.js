@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './newLanding.scss';
 import Logo from '../imgs/favicon.png';
-import { doc } from 'prettier';
+// import { doc } from 'prettier';
 
 const NewHomePage = () => {
     const openNav = () => {
