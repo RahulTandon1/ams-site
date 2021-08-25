@@ -62,7 +62,7 @@ const NewHomePage = () => {
     return(
         <React.Fragment>
         <div className="menu-container">
-            <div className="fadeout" onClick={ closeNav } onTouchStart={closeNav}></div>
+            <div className="fadeout" onClick={ closeNav} onTouchStart={closeNav}></div>
             <div className="menu">
                 <div class="yellow-highlight"></div>
                 <h1 class="school-name-heading">Amrit Masonic Special School</h1>
@@ -113,7 +113,6 @@ const NewHomePage = () => {
                     <a className="heading-text">About Us</a>
                 </div> */}
             </div>
-            
         </div>
         
         <div className="main-content">
