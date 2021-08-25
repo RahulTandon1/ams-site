@@ -36,7 +36,7 @@ const NewHomePage = () => {
 
         for (let i = 0; i < headingsToBeToggled.length; i++) {
             let heading = headingsToBeToggled[i]
-            heading.addEventListener("click",() =>{
+            const func = () => {
                 // this.classList.toggle("active");
                 // var dropdownContent = this.nextElementSibling;
                 // !!!! FIND CLEANER WAY TO SELECT
@@ -49,7 +49,9 @@ const NewHomePage = () => {
                 } else {
                     dropdown.style.display = "block";
                 }
-            });
+            }
+            heading.addEventListener("click",func);
+            heading.addEventListener("touchstart",func);
         }
     }
 
