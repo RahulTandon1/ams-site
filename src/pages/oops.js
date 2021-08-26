@@ -1,25 +1,38 @@
 import React from "react"
 
 const IndexPage = () => {
-  return (
-  <div className="main-content">
-  {/* <a href="#"> </a>*/}
   
-        <div class="header">
-            <div class="menu-button" onClick={ openNav} onTouchStart={openNav}>
-                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-                <span class="menu-indicating-text">MENU</span>                
-            </div>
-            <img
-                class="logo"
-                src={Logo} 
-                alt="logo of AMSS; yellow coloured Freemasons logo and text on blue background and red outline"
-            />
-        </div>
-    </div>    
-  )
-  
+    // function openNav(){
+    //     let el = document.getElementsByClassName('menu-container')[0]
+    //     // el.visibility = "visible";
+    //     el.style.width = "100vw";
+    //     document.getElementsByClassName('fadeout')[0].style.width= "100vw";
+    //     let menu = document.getElementsByClassName('menu')[0];
+    //     menu.style.width = '80vw';
+    //     menu.classList.add('shadow-on');
+    //     menu.classList.remove('shadow-off');
+    // }
+    // function closeNav() {
+    //     let el = document.getElementsByClassName('menu-container')[0]
+    //     let arr = el.childNodes
+    //     arr.forEach(tempEl => tempEl.style.width="0px")
+        
+    //     let menu = document.getElementsByClassName('menu')[0];
+    //     menu.classList.remove('shadow-on');
+    //     menu.classList.add('shadow-off');
+        
+    //     el.style.width = "0px";
+    //     el.visibility = "hidden";
+    //     console.log("hello world");
+    // }
+
+    return (
+    //    <React.Fragment>
+           <div onClick={ ()=> {console.log('oops')} }>
+            Hello World!
+           </div>
+    )
 }
 
-export default IndexPage
+export default IndexPage;
   
