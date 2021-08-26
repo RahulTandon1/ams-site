@@ -4,7 +4,7 @@ import Logo from '../imgs/favicon.png';
 // import { doc } from 'prettier';
 
 const NewHomePage = () => {
-    const openNav = () => {
+    const openNav = (e) => {
         let el = document.getElementsByClassName('menu-container')[0]
         // el.visibility = "visible";
         el.style.width = "100vw";
@@ -13,6 +13,8 @@ const NewHomePage = () => {
         menu.style.width = '80vw';
         menu.classList.add('shadow-on');
         menu.classList.remove('shadow-off');
+        console.log('open nav called');
+        console.log(`clicked ${e.target}`)
     }
     const closeNav = () => {
         let el = document.getElementsByClassName('menu-container')[0]
@@ -25,7 +27,7 @@ const NewHomePage = () => {
         
         el.style.width = "0px";
         el.visibility = "hidden";
-        console.log("hello world");
+        console.log("close nav called");
     }
     const toggleNavDropdown = () => {
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -51,7 +53,7 @@ const NewHomePage = () => {
                 }
             }
             heading.addEventListener("click",func);
-            heading.addEventListener("touchstart",func);
+            // heading.addEventListener("touchstart",func);
         }
     }
 
@@ -62,7 +64,7 @@ const NewHomePage = () => {
     return(
         <React.Fragment>
         <div className="menu-container">
-            <div className="fadeout" onClick={ closeNav} onTouchStart={closeNav}></div>
+            <div className="fadeout" onClick={ closeNav}></div>
             <div className="menu">
                 <div class="yellow-highlight"></div>
                 <h1 class="school-name-heading">Amrit Masonic Special School</h1>
@@ -118,8 +120,8 @@ const NewHomePage = () => {
         <div className="main-content">
             {/* <a href="#"> </a>*/}
             
-            <div class="header">
-                <div class="menu-button" onClick={ openNav} onTouchStart={openNav}>
+            <div class="header" onClick={e => console.log(e.target)}>
+                <div class="menu-button" onClick={ openNav}>
                     <svg class="hamburger" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                     <span class="menu-indicating-text">MENU</span>                
                 </div>

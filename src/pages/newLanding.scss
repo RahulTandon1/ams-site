@@ -23,9 +23,11 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
     transform: translate(-50%, -50%);
   }
   .menu-button {
-    width: 82px;
-    height: 24px;
+    width: 20%;
+    height: 75%;
     // height: 100%;
+    background-color: transparent;
+    // border-style: solid;
     text-align: center;
     font-size: 1em;
     position: relative;
@@ -135,15 +137,16 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
 
   .school-name-heading {
     position: absolute;
-    height: 5.3%;
-    text-overflow: hidden;
-    overflow-x: hidden;
+    height: 3.5%;
+    // text-overflow: hidden;
+    overflow: hidden;
     top: 6.7%;
     display: block;
     color: #000;
     font-weight: bolder;
     font-size: 1.15rem;
-    width: 100%;
+    // width: 100%;
+    width: 80vw;
     text-align: center;
   }
   .divider {
