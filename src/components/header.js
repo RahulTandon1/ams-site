@@ -19,17 +19,17 @@ const Header = () => {
 
       <nav>
 
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/old-version/index">Home</Link>
+        <Link to="/old-version/about">About</Link>
         <div className="dropdown">
           <a href="#"> Rehabilitation Services</a>
           <div className="dropdown-content">
-            <Link to="/rehab-services/early">Early Intervention</Link>
-            <Link to="/rehab-services/occupational">Occupational Therapy</Link>
-            <Link to="/rehab-services/speech">Speech & Language Pathology</Link>
-            <Link to="/rehab-services/prevocational">Pre-Vocational Training</Link>
-            <Link to="/rehab-services/specialEducation">Special Education</Link>
-            <Link to="/rehab-services/nios">NIOS</Link>
+            <Link to="/old-version/rehab-services/early">Early Intervention</Link>
+            <Link to="/old-version/rehab-services/occupational">Occupational Therapy</Link>
+            <Link to="/old-version/rehab-services/speech">Speech & Language Pathology</Link>
+            <Link to="/old-version/rehab-services/prevocational">Pre-Vocational Training</Link>
+            <Link to="/old-version/rehab-services/specialEducation">Special Education</Link>
+            <Link to="/old-version/rehab-services/nios">NIOS</Link>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="dropdown">
           <a href="#">Collaborations</a>
           <div className="dropdown-content">
-          <Link to="/collaborations/amar-jyoti">Amar Jyoti</Link>
+          <Link to="/old-version/collaborations/amar-jyoti">Amar Jyoti</Link>
           </div>
           
         </div>

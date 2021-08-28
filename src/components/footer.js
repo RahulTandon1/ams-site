@@ -2,7 +2,8 @@ import React from "react"
 import './footer.scss'
 
 const Footer = () => {
-    return(<footer>
+    return(
+    <footer>
     <div className="footer-main-container">
         <div className="info-column">
           <h2>Contact Us</h2>

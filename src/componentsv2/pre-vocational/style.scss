@@ -1,0 +1,36 @@
+@import "../../styles/config";
+
+.main-content .container {
+  padding: 0;
+}
+
+#page-title-div {
+  // horinzontally center
+  margin-top: 4.5%;
+  margin-left: auto;
+  margin-right: auto;
+
+  // centering text for safety
+  text-align: center;
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  #title-underline {
+    color: #ff6961;
+    border-style: solid;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-width: 1.5px;
+    border-radius: 5px;
+  }
+}
+
+.stuff {
+  // space out from previous "stuff"
+  margin-top: 2%;
+  padding-bottom: 60px;
+}

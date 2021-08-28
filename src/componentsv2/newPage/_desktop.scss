@@ -1,0 +1,149 @@
+.main-content {
+  position: relative;
+  width: 100vw - 23vw;
+  left: 23vw;
+  padding: 0 0 0 0;
+}
+
+.header {
+  position: relative;
+  //   top: 0;
+  //   background-color: transparent;
+  .school-name-heading {
+    display: block;
+    height: 100%;
+
+    // vertically centering in header
+    margin-top: auto;
+    padding: 10px 0;
+    // line-height: 100%;
+    width: 100%;
+    // font-size: 20px;
+    // color: black;
+    // z-index: 3;
+    text-align: center;
+  }
+  .menu-button,
+  .logo {
+    display: none;
+  }
+}
+
+// FOOTER MOBILE STYLES
+
+.footer {
+  padding-top: 5%;
+  .footer-divider {
+    display: none;
+  }
+
+  .footer-wrapper-except-copyright {
+    // border-style: solid;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  #contact-us-info-column,
+  #timings-column,
+  #map-column {
+    margin: 0 0 0 0;
+    padding: 0 0 0 3%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    font-size: 0.8em;
+    // margin-right: 5%;
+    overflow-wrap: break-word;
+
+    // position: relative;
+    // top: 0;
+    width: 33.3%;
+  }
+
+  // // white line as border
+  // #contact-us-info-column,
+  // #timings-column {
+  //   border-right-style: solid;
+  // }
+
+  #contact-us-info-column {
+    overflow: hidden;
+    max-height: 35vh;
+    // align-items: baseline;
+    // justify-content: space-between;
+    width: 34%;
+    text-align: left;
+
+    #email-container,
+    #facebook,
+    #whatsapp {
+      // flex-direction: row;
+      font-size: 1em;
+      max-width: 100%;
+      display: block;
+      // width: 100%;
+      // padding-left: 5%;
+      // padding-right: 5%;
+    }
+
+    #email-container {
+      // width: 100%;
+      // display: block;
+      padding: 0 0 0 0;
+      margin-bottom: 5%;
+    }
+    #facebook,
+    #whatsapp {
+      display: inline-block;
+      width: 30%;
+      // justify-content: space-between;
+      // max-width: 100%;
+      p {
+        display: none;
+      }
+      img {
+        display: inline-block;
+      }
+    }
+  }
+  #timings-column {
+    width: 30%;
+  }
+
+  // map div width decrease {
+  #map-column {
+    h2 {
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      margin: 0 0 0 0;
+    }
+  }
+
+  // .info-column {
+  //   border-style: solid;
+  // }
+
+  // #contact-us-info-column {
+  //   div {
+  //     flex-direction: column;
+  //     flex-wrap: nowrap;
+  //     align-items: flex-start;
+  //     align-content: flex-start;
+  //     justify-content: center;
+  //   }
+  //   p,
+  //   #copy-email {
+  //     display: block;
+  //   }
+  // }
+
+  // #map-div h2 {
+  //   width: 33%;
+  // }
+}

@@ -1,76 +1,6 @@
-@import "../styles/config";
-$menu-grey: #383535;
-$menu-blue: #1967d2;
-$menu-lightblue: rgba(25, 102, 210, 0.28);
-* {
-  // border: 1px solid;
-  box-sizing: border-box;
-}
+@import "../../styles/config";
 
-.header {
-  z-index: 0;
-  height: 76px;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  background-color: $primary-yellow;
-  // vertical-align: middle;
-  .logo {
-    position: absolute;
-    height: 57px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .menu-button {
-    width: 20%;
-    height: 75%;
-    // height: 100%;
-    background-color: transparent;
-    // border-style: solid;
-    text-align: center;
-    font-size: 1em;
-    position: relative;
-    top: 50%;
-    left: 3%;
-    transform: translateY(-50%);
-    .hamburger {
-      display: inline-block;
-      height: 24px;
-      width: 24px;
-
-      position: absolute;
-      top: 50%;
-      left: 0;
-
-      transform: translateY(-50%);
-    }
-    .menu-indicating-text {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 24px;
-      // display: in;
-      // max-width:
-    }
-  }
-  // .menu-stuff-container {
-  //   // height: 100%;
-  //   display: inline-block;
-  //   position: relative;
-  //   height: 100%;
-  //   padding-top: auto;
-  //   // vertical-align: middle;
-  // }
-  // .header-menu-indicating-text {
-  //   position: absolute;
-  //   top: 0;
-  //   line-height: 76px;
-  //   // font-size: 2rem;
-  //   // font-size: 1.5rem;
-  // }
-}
+// ------- MENU RELATED STYLES
 .menu-container {
   height: 100vh;
   // width: 100vw;
@@ -79,10 +9,10 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
   z-index: 1;
   top: 0;
   left: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   // visibility: hidden;
   // overflow: hidden;
-  // transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .fadeout {
@@ -90,11 +20,14 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
   // width: calc(100vw - 340px);
   overflow-x: hidden;
   // width: 100vw;
-  width: 0vw;
+  width: 100vw;
   height: 100vh;
-  position: fixed;
+  // position: fixed;
+  top: 0;
+  left: 0;
   // left: calc(100vw - 340px);
-  background-color: rgba(56, 53, 53, 0.1);
+  // background-color: rgba(56, 53, 53, 0.1);
+  background-color: transparent;
 }
 
 .shadow-on {
@@ -107,11 +40,13 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
 .menu {
   overflow-x: hidden;
   overflow-y: hidden;
-  position: fixed;
+  position: absolute;
+  z-index: 2;
+  // position: fixed;
   top: 0;
   left: 0;
   // width: 80vw;
-  width: 0vw;
+  width: 80vw;
   height: 100vh;
   // padding: 60px 0 0 0;
   margin: 0 0 0 0;
@@ -125,6 +60,10 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
 
   padding-top: 30px;
   background-color: #fffefe;
+
+  .logo {
+    display: none;
+  }
 
   .yellow-highlight {
     z-index: 3;
@@ -167,6 +106,13 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
     width: 36px;
     fill: $menu-grey;
   }
+
+  #nios-logo {
+    height: 36px;
+    margin-left: 4px;
+    margin-right: 6px;
+  }
+
   .dropdown-arrow {
     transition: 0.15s;
   }
@@ -182,9 +128,16 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
     font-size: 1.3em;
     max-width: 287px;
     width: 287px;
+    // height: 50px;
+    // padding-top: 7px;
+    // padding-bottom: 7px;
 
     &:hover {
       cursor: pointer;
+    }
+
+    &.not-dropdown .nav-icon {
+      margin-left: 36px;
     }
 
     // max-height: 38px;
@@ -204,18 +157,24 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
     max-height: 38px;
     height: 38px;
     vertical-align: text-bottom;
+    text-decoration: none;
     // margin-top: auto;
     text-overflow: ellipsis;
     // font-size: 18px;
-    padding: 0 0 0 0;
-    margin: 0 0 0 2%;
+    padding: 0 0 0 3%;
+    margin: 0 0 0 0;
     line-height: 36px;
     display: inline-block;
+
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .dropdown-content {
     // margin-left: ;
-    margin: 2% 0 2% 22.1%;
+    margin: 2% 0 5% 20%;
     display: none;
     // .dropdown-open {
     //   display: block;
@@ -228,30 +187,80 @@ $menu-lightblue: rgba(25, 102, 210, 0.28);
     display: block;
     height: 38px;
     max-height: 38px;
+    text-decoration: none;
     // font-size: 1em;
-    line-height: 38px;
-    max-height: 38px;
+    // line-height: 38px;
+    // max-height: 38px;
     width: 229px;
-    max-width: 229px;
-
+    max-width: calc(229px - 22.1%);
+    text-overflow: ellipsis " [...]";
+    // overflow: hidden;
+    font-size: 0.9em;
     &:visited {
+      color: $menu-grey;
+      text-decoration: none;
       color: $menu-grey;
     }
   }
 }
 
-// .nav-dropdown:hover .dropdown-content {
-//   display: block;
-// }
-// .something {
-//   position: absolute;
-//   // top: 50%;
-//   // transform: translateY(-50%);
+@media only screen and (min-width: 800px) {
+  .menu-container {
+    visibility: hidden;
+    width: 100vw;
 
-//   display: inline-block;
-//   vertical-align: middle;
+    .fadeout {
+      display: none;
+    }
+    .menu {
+      visibility: visible;
+      width: 23vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      // wrote baaki menu styles neeche/underneath
+    }
+  }
 
-//   height: 100%;
-//   margin-left: 10px;
-//   line-height: 36px;
-// }
+  .menu {
+    //  ^ for specificity
+    box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3),
+      0 8px 12px 6px rgba(60, 64, 67, 0.15);
+
+    .yellow-highlight,
+    .school-name-heading,
+    .divider {
+      display: none;
+    }
+
+    .logo {
+      display: block;
+      height: 10%;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav-items-container {
+      .nav-item {
+        font-size: 1.2em;
+      }
+
+      #nios-logo {
+        height: 2rem;
+        margin-right: 0.3rem;
+        margin-left: 0.2rem;
+      }
+
+      .nav-icon {
+        height: 2rem;
+        width: 2rem;
+      }
+
+      .nav-item.not-dropdown .nav-icon {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
