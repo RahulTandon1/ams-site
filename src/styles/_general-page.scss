@@ -1,14 +1,18 @@
-@import "../../styles/config";
+@use "./config" as *;
+// @import "../../../styles/general-page";
 
 .main-content .container {
-  padding: 0;
+  padding-top: 20vh;
 }
 
 #page-title-div {
   // horinzontally center
-  margin-top: 4.5%;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-top: 4.5%;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-top: 10vh;
+  position: relative;
+  // top: 10vh;
 
   // centering text for safety
   text-align: center;
@@ -69,13 +73,17 @@
     }
     ol,
     ul {
-      li {
+      li:not(.nested-list li) {
         font-size: 1em;
         padding-left: 1rem;
+        margin-bottom: 5%;
       }
       align-content: center;
       margin: 0 auto;
       line-height: 1.5;
+    }
+    .nested-list {
+      margin-left: 10%;
     }
     .bordered {
       border-style: solid;
@@ -96,4 +104,7 @@
 
     margin-top: 2.5%;
   }
+}
+
+@media only screen and (min-width: 800px) {
 }

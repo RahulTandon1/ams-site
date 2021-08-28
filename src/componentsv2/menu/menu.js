@@ -6,7 +6,7 @@ import RehabilitationLogo from '../../imgs/heal.svg';
 import './menu.scss';
 import NiosLogo from '../../imgs/nios.svg';
 
-const closeNav = () => {
+const closeNav = (e) => {
     
     let el = document.getElementsByClassName('menu-container')[0]
     // let arr = el.childNodes
@@ -18,7 +18,7 @@ const closeNav = () => {
     
     el.style.width = "0px";
     el.visibility = "hidden";
-    console.log("close nav called");
+    console.log(`close nav called ${e.target}`);
 }
 const toggleNavDropdown = () => {
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -29,10 +29,13 @@ const toggleNavDropdown = () => {
 
     for (let i = 0; i < headingsToBeToggled.length; i++) {
         let heading = headingsToBeToggled[i]
-        const func = () => {
-            // this.classList.toggle("active");
-            // var dropdownContent = this.nextElementSibling;
-            // !!!! FIND CLEANER WAY TO SELECT
+        // const func = (heading) => {
+        //     // this.classList.toggle("active");
+        //     // var dropdownContent = this.nextElementSibling;
+        //     // !!!! FIND CLEANER WAY TO SELECT
+           
+        // }
+        heading.addEventListener("click",() => {
             var arrow = heading.children[0];
             var dropdown = heading.children[3];
             arrow.classList.toggle('dropdown-arrow-open');
@@ -44,8 +47,7 @@ const toggleNavDropdown = () => {
                 dropdown.style.display = "block";
                 console.log('dropdown opened');
             }
-        }
-        heading.addEventListener("click",func);
+        });
 
     }
 }

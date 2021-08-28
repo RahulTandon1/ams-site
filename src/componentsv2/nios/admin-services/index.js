@@ -17,21 +17,21 @@ export default function() {
                 <ul>
                     <li>Fill in the online NIOS admission forms for new students of all NIOS programs</li>
                     <li>Handholding in
-                        <ul>
+                        <ul className="nested-list">
                             <li>Subject selection</li>
                             <li>Exam spacing</li>
                         </ul>
                     </li>
                     <li>Liaising with NIOS Regional Centre for Exam relaxations</li>
                     <li>Coordinating with other study centres for
-                        <ul>
+                        <ul className="nested-list">
                             <li>Contact classes</li>
                             <li>Practical Exam Dates</li>
                             <li>Theory and Practical exams</li>
                         </ul>
                     </li>
                     <li>Reminders for
-                    <ul>
+                    <ul className="nested-list">
                             <li>TMA and project submission</li>
                             <li>Exam fees</li>
                             <li>Hall ticket</li>

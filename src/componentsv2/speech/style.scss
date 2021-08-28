@@ -33,4 +33,67 @@
   // space out from previous "stuff"
   margin-top: 2%;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20%;
+  .stuff-heading {
+    font-size: 1.75em;
+    color: #000000;
+    // indenting heading e.g. "Objectives"
+    margin-left: 5%;
+  }
+  .stuff-content {
+    width: 80%;
+    // space out from heading if any
+    margin-top: 0.75%;
+    margin-bottom: 2%;
+    // display: flex;
+    text-align: left;
+
+    // direction: column;
+    p {
+      line-height: 1.5em;
+      width: 100%;
+      font-size: 1.2em;
+    }
+    img {
+      width: 30%;
+      height: auto;
+      align-self: center;
+      border-radius: 5px;
+      border-width: 3px;
+      border-color: $primary-grey;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    ol,
+    ul {
+      li {
+        font-size: 1em;
+        padding-left: 1rem;
+      }
+      align-content: center;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .bordered {
+      border-style: solid;
+      border-color: $primary-grey;
+      border-radius: 15px;
+      padding: 1% 1% 1% 1%;
+    }
+  }
+
+  .stuff-divider {
+    border-radius: 10px;
+    border-width: 2px;
+    width: 50%;
+
+    // horizontal aligh
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 2.5%;
+  }
 }
